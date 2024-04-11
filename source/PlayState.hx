@@ -9,6 +9,8 @@ class PlayState extends FlxState
 
 	override public function create()
 	{
+		super.create();
+
 		stamp = haxe.Timer.stamp();
 
 		trace("Loading and adding 100k sprites into FlxState...");
@@ -16,14 +18,12 @@ class PlayState extends FlxState
 		for (i in 0...100000)
 		{
 			var spr:FlxSprite = new FlxSprite().loadGraphic('assets/image.png');
-			spr.x = (i * 0.01);
-			spr.alpha = 0.005;
+			spr.x = (i * 0.0025);
+			spr.alpha = 0.05;
 			add(spr);
 		}
 
 		trace("Took " + (haxe.Timer.stamp() - stamp) + " seconds to load");
-
-		super.create();
 	}
 
 	override public function update(elapsed:Float)
