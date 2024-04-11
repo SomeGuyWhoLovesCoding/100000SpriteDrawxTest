@@ -11,6 +11,8 @@ class PlayState extends FlxState
 	{
 		stamp = haxe.Timer.stamp();
 
+		trace("Loading and adding 100k sprites into FlxState...")
+
 		for (i in 0...100000)
 		{
 			var spr:FlxSprite = new FlxSprite().loadGraphic('assets/image.png');
