@@ -11,7 +11,7 @@ class PlayState extends FlxState
 	{
 		stamp = haxe.Timer.stamp();
 
-		trace("Loading and adding 100k sprites into FlxState...")
+		trace("Loading and adding 100k sprites into FlxState...");
 
 		for (i in 0...100000)
 		{
