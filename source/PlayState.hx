@@ -15,10 +15,10 @@ class PlayState extends FlxState
 
 		trace("Loading and adding 100k sprites into FlxState...");
 
-		for (i in 0...100000)
+		for (i in 0...3000)
 		{
 			var spr:FlxSprite = new FlxSprite().loadGraphic('assets/image.png');
-			spr.x = (i * 0.0025);
+			spr.x = (i * 0.05);
 			spr.alpha = 0.05;
 			add(spr);
 		}
