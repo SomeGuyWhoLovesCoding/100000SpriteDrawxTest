@@ -24,8 +24,8 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float)
 	{
-		super.update(elapsed);
-		trace(1.0 / (haxe.Timer.stamp() - stamp) + ' fps');
+		Sys.println(1.0 / (haxe.Timer.stamp() - stamp) + ' fps');
 		stamp = haxe.Timer.stamp();
+		super.update(elapsed);
 	}
 }
