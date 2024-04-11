@@ -1,0 +1,6 @@
+export/*
+chart_converter/export/*
+.vscode/*
+*.code-workspace
+.history
+.ionide
